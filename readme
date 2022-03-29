@@ -1,20 +1,47 @@
-we first use supercell.in as
+We first create a new supercell.in with contents as following (Chrysotile.vasp is crystal structure in primitive unit cell) : 
 Chrysotile.vasp
-1  0    0 
-1  2   0 
-0   0   1
+1  0  0 
+1  2  0 
+0  0  1
 1
 0
 
-to generate an new unitcell POSCAR by copying nanosheet to Chrysotile_rect.vasp 
-please remove names of elements after the fractional coordinates.
-and use this as supercell.in to generate nanotube
+Save the file and run 
+>>> python construct_nanotube.py
+>>> cp nanosheet.vasp Chrysotile_rect.vasp 
 
+Now you have a new crytal structure which a1_new = a1_old, a2_new = 1*a1_old + 2*a2_old, satisfying a2_new PENPENDICULAR to a1_new.
+If you want other structure, please modify the 2nd to 4th line as you wish
+a11 a12 a13 
+a21 a22 a23
+a31 a32 a33 
+such that a1_new = a11*a1_old + a12*a2_old + a13*a3_old; a2_new = a21*a1_old + a22*a2_old + a23*a3_old, etc. 
+Please make sure that a1_new should be perpendicular to a2_new. and a3_new is permendicular to a1_new and a2_new. 
+
+Now we use supercell.in with contents as following 
 Chrysotile_rect.vasp
 24  0    0 
 0   3   0 
 0   0   1
 1
 0
+
+Save the file and run 
+>>> python construct_nanotube.py
+
+This will generate a nanotube which roll along a1_new direction with the tube central axis // to the a2_new direction. 
+
+The 5th line can be 1 or -1, settting whether the top most atoms in z are rolled inside or outside.
+The 6th line can be 0 to |c_new|, which sets how much we shit the atoms in z before we roll a nanosheet into a tube. 
+
+
+Copyright: 
+Changming Yue
+yuechangming8@gmail.com
+
+Ref: cif2tube, https://doi.org/10.1016/j.jtice.2016.08.030
+
+
+
 
 
