@@ -113,7 +113,6 @@ for iatom in range(natom_conv):
 fl.close()
 
 print "We role the sheet along the direction", Amat_conv[:,0], ", where the Central axis of the tube is // to ", Amat_conv[:,1]
-# we suppose b is perp to a, and roll along b : L//b; we suppose to role along 
 R = np.linalg.norm(Amat_conv[:,0])/(2.0*np.pi)
 fl=open("nanotube.xyz","w")
 print >>fl, natom_conv
