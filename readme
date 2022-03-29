@@ -1,0 +1,20 @@
+we first use supercell.in as
+Chrysotile.vasp
+1  0    0 
+1  2   0 
+0   0   1
+1
+0
+
+to generate an new unitcell POSCAR by copying nanosheet to Chrysotile_rect.vasp 
+please remove names of elements after the fractional coordinates.
+and use this as supercell.in to generate nanotube
+
+Chrysotile_rect.vasp
+24  0    0 
+0   3   0 
+0   0   1
+1
+0
+
+

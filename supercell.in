@@ -1,0 +1,22 @@
+Chrysotile_rect.vasp
+24  0    0 
+0   3   0 
+0   0   1
+1
+0
+
+graphene_2x1.vasp
+24  0   0 
+0   12  0 
+0   0   1
+-1
+0.0
+
+line 1: name of input crystal structure
+line 2: super_cell_vector_1 in terms of input crystal vector_1, _2, -3 
+line 3: super_cell_vector_2 in terms of input crystal vector_1, _2, -3 
+line 4: super_cell_vector_3 in terms of input crystal vector_1, _2, -3 
+line 5: folding direction, // input crystal vector_3 [ 1 ], or anti-// to input crystal vector_3 [-1]
+line 6: shift of atoms in z direction in unit of Anstrom
+
+
