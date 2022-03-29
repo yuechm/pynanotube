@@ -1,3 +1,7 @@
+A very simple python script to generate nanobue from nanosheet formed by any crystal. 
+The user only needs to provide a strcture file in the format of VASP/POSCAR and prepare
+an supercell input file as illustrated in the following. 
+
 We first create a new supercell.in with contents as following (Chrysotile.vasp is crystal structure in primitive unit cell) : 
 Chrysotile.vasp
 1  0  0 
@@ -9,6 +13,8 @@ Chrysotile.vasp
 Save the file and run 
 >>> python construct_nanotube.py
 >>> cp nanosheet.vasp Chrysotile_rect.vasp 
+
+(before next step, you need to open the file and remove the element name to the right side of fraction corrdinates in Chrysotile_rect.vasp)
 
 Now you have a new crytal structure which a1_new = a1_old, a2_new = 1*a1_old + 2*a2_old, satisfying a2_new PENPENDICULAR to a1_new.
 If you want other structure, please modify the 2nd to 4th line as you wish
