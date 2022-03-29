@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+# copyright, Changming Yue, yuechangming8@gmail.com
 import numpy as np
 Amat_prim=np.zeros((3,3),dtype=np.float64)
 Amat_conv=np.zeros((3,3),dtype=np.float64)
