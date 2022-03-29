@@ -29,10 +29,10 @@ Chrysotile_rect.vasp
 Save the file and run 
 >>> python construct_nanotube.py
 
-This will generate a nanotube which roll along a1_new direction with the tube central axis // to the a2_new direction. 
+This will generate a nanotube which rolls along a1_new direction with the tube central axis // to the a2_new direction. 
 
 The 5th line can be 1 or -1, settting whether the top most atoms in z are rolled inside or outside.
-The 6th line can be 0 to |c_new|, which sets how much we shit the atoms in z before we roll a nanosheet into a tube. 
+The 6th line can be 0 to |c_new|, which sets how much we shift the atoms in z before we roll a nanosheet into a tube. 
 
 
 Copyright: 
