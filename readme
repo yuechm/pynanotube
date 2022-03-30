@@ -14,8 +14,6 @@ Save the file and run
 >>> python construct_nanotube.py
 >>> cp nanosheet.vasp Chrysotile_rect.vasp 
 
-(before next step, you need to open the file and remove the element name to the right side of fraction corrdinates in Chrysotile_rect.vasp)
-
 Now you have a new crytal structure which a1_new = a1_old, a2_new = 1*a1_old + 2*a2_old, satisfying a2_new PENPENDICULAR to a1_new.
 If you want other structure, please modify the 2nd to 4th line as you wish
 a11 a12 a13 
