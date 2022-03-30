@@ -40,7 +40,8 @@ with open(fl,"r") as rd:
        for j in range(natom): atoms_labelprim.append(eles[i])
    line9=rd.readline()
    for i in range(natom_prim):
-      f1,f2,f3 = rd.readline().strip().split()
+      line=rd.readline()
+      f1,f2,f3 = line.strip().split()[0], line.strip().split()[1], line.strip().split()[2]
       atoms_fracprim[0,i] = np.float64(f1)
       atoms_fracprim[1,i] = np.float64(f2)
       atoms_fracprim[2,i] = np.float64(f3)
