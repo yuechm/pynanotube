@@ -5,13 +5,10 @@ Chrysotile_rect.vasp
 1
 0
 
-graphene_2x1.vasp
-24  0   0 
-0   12  0 
-0   0   1
--1
-0.0
 
+
+--------------ATTENTION, The following is just for illustration----------------
+There are only 6 lines in your supercell.in, with each line the meaning as
 line 1: name of input crystal structure
 line 2: super_cell_vector_1 in terms of input crystal vector_1, _2, -3 
 line 3: super_cell_vector_2 in terms of input crystal vector_1, _2, -3 
